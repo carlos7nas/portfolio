@@ -27,9 +27,6 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="wrap nav">
-        <a className="brand" href="#topo" onClick={ir('topo')}>
-          <span>Carlos Vitor</span>
-        </a>
         <nav className={'menu' + (aberto ? ' open' : '')} id="menu" aria-label="Navegação principal">
           {NAV.map(([id, rotulo]) => (
             <a key={id} href={'#' + id} onClick={ir(id)} aria-current={ativo === id ? 'true' : undefined}>
