@@ -28,7 +28,6 @@ export default function Header() {
     <header className="site-header">
       <div className="wrap nav">
         <a className="brand" href="#topo" onClick={ir('topo')}>
-          <span className="mark" aria-hidden="true">CV</span>
           <span>Carlos Vitor</span>
         </a>
         <nav className={'menu' + (aberto ? ' open' : '')} id="menu" aria-label="Navegação principal">
